@@ -1,0 +1,51 @@
+.pies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pie-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.pie-item h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+/* Pagination styles */
+.page-numbers {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    color: #0073aa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.page-numbers.current {
+	margin-top: 1rem;
+    background-color: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+.page-numbers:hover {
+    background-color: #f1f1f1;
+    color: #0073aa;
+    border-color: #0073aa;
+}
+
+.page-numbers.prev, .page-numbers.next {
+    font-weight: bold;
+}
+
+.page-numbers.prev:hover, .page-numbers.next:hover {
+    background-color: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
